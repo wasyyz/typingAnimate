@@ -17,7 +17,9 @@ class Typing {
         count++;
         if (count >= this.str.length) {
           clearInterval(timer);
-          this.hideClass.style.display = 'none';
+          if (this.hideClass) {
+            this.hideClass.style.display = 'none';
+          }
         }
       }, this.typingDelay);
     };
