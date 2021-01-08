@@ -1,4 +1,4 @@
-class Typing {
+export default class Typing {
   constructor(obj) {
     // Параметры
     this.el = obj.element;
