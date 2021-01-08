@@ -4,13 +4,21 @@ JavaScript animate typing text...
 How to use ?
 ```bash
 
+# install package
+
+npm i typing-animate
+
 # include typing.js
+
+import Typing from './node_modules/typing-animate/typing.js'
+
+const el = document.getElementById('el');
+const string = 'Your text...'
 
 # Pass parameters and call the run method
   new Typing({
     element: element,
     text: string,
-    hideClass: typingAnim,
     typingDelay: 70
   }).run();
 
