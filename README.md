@@ -17,8 +17,9 @@ const string = 'Your text...'
 
 # Pass parameters and call the run method
   new Typing({
-    element: element,
+    element: el,
     text: string,
+    hideClass: hideElement,
     typingDelay: 70
   }).run();
 
