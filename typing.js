@@ -1,13 +1,12 @@
 export default class Typing {
   constructor(obj) {
-    // Параметры
+    // Params
     this.el = obj.element;
     this.str = obj.text;
-    this.modalClass = obj.modalClass;
     this.hideClass = obj.hideClass;
     this.typingDelay = obj.typingDelay;
 
-    // Метод
+    // Method
     this.run = function () {
 
       let count = 0;
@@ -22,6 +21,7 @@ export default class Typing {
           }
         }
       }, this.typingDelay);
+      
     };
   }
 }
